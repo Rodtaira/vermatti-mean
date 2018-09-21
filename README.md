@@ -1,4 +1,4 @@
-# vermatti mean ecommerce
+# Vermatti MEAN Ecommerce
 Ecommerce developed using MEAN 
 
 To run this project you need to have installed at last the last versions of node, npm and mongo. 
