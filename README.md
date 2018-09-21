@@ -7,6 +7,10 @@ Follow these steps,
 
 git clone https://github.com/Rodtaira/vermatti-mean.git
 
+Enter the directory of the project with: 
+
+cd vermatti-mean/ 
+
 Run the client side with: 
 
 cd client/
