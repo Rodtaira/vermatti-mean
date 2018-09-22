@@ -5,20 +5,21 @@ import { UserService } from '../_services/index';
 
 @Component({
   moduleId: module.id,
-  selector: 'vermatti-header',
-  templateUrl: 'vermatti-header.component.html'
+  selector: 'vermatti-cart',
+  templateUrl: 'vermatti-cart.component.html'
 })
 
-export class VermattiHeaderComponent implements OnInit {
+export class VermattiCartComponent implements OnInit {
 
 
   constructor(private router: Router,) {
 
   }
 
-  goToLogin(){
-    this.router.navigate(['/login']);
+  goToCart(){
     console.log('clicked');
+    this.router.navigate(['/login']);
+
   }
 
    ngOnInit() {

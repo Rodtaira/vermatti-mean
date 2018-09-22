@@ -13,6 +13,8 @@ import { JwtInterceptorProvider, ErrorInterceptorProvider } from './_helpers/ind
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 import { HomeComponent } from './home/index';
 import {VermattiHomeComponent} from './vermatti-home/index';
+import {VermattiCartComponent} from './vermatti-cart/index';
+
 import {VermattiHeaderComponent} from './vermatti-header/index'
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
@@ -33,7 +35,8 @@ import { RegisterComponent } from './register/index';
         LoginComponent,
         RegisterComponent,
         VermattiHomeComponent,
-        VermattiHeaderComponent
+        VermattiHeaderComponent,
+        VermattiCartComponent
     ],
     providers: [
         AuthGuard,
