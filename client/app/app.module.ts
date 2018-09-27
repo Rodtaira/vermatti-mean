@@ -14,8 +14,9 @@ import { AlertService, AuthenticationService, UserService } from './_services/in
 import { HomeComponent } from './home/index';
 import {VermattiHomeComponent} from './vermatti-home/index';
 import {VermattiCartComponent} from './vermatti-cart/index';
-
-import {VermattiHeaderComponent} from './vermatti-header/index'
+import {VermattiFooterComponent} from './vermatti-footer/index';
+import {VermattiHeaderComponent} from './vermatti-header/index';
+import {VermattiBannerComponent} from './vermatti-banner/index'; 
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 
@@ -36,7 +37,9 @@ import { RegisterComponent } from './register/index';
         RegisterComponent,
         VermattiHomeComponent,
         VermattiHeaderComponent,
-        VermattiCartComponent
+        VermattiFooterComponent,
+        VermattiCartComponent,
+        VermattiBannerComponent
     ],
     providers: [
         AuthGuard,

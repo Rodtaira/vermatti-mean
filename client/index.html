@@ -4,23 +4,39 @@
     <base href="/" />
     <title>VERMATTI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta charset="utf-8">
+    http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+    <script>
+    jQuery(document).ready(function(){
+      addEventListener("load", function () {
+  			setTimeout(hideURLbar, 0);
+  		}, false);
 
-    <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
- -->
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <!--<link rel="stylesheet" href="style.css"> -->
-    <!-- application css -->
+  		function hideURLbar() {
+  			window.scrollTo(0, 1);
+  		}
+    });
 
-    <link href="app.css" rel="stylesheet" />
+  	</script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/login_overlay.css" rel='stylesheet' type='text/css' />
+    <link href="css/style6.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/shop.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+      rel="stylesheet">
+
 
     <!-- polyfill(s) for older browsers -->
+
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-
+  -
     <script src="systemjs.config.js"></script>
     <script>
         System.import('app').catch(function (err) { console.error(err); });
@@ -28,22 +44,144 @@
 </head>
 <body>
     <app>Loading...</app>
+  <script src="js/jquery-2.2.3.min.js" type="text/javascript"> </script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery("#myModal").modal();
+		});
+	</script>
+
+	<!-- // modal -->
+
+	<!--search jQuery-->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/classie-search.js"></script>
+	<script src="js/demo1-search.js"></script>
+	<!--//search jQuery-->
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+		googles.render();
+
+		googles.cart.on('googles_checkout', function (evt) {
+			var items, len, i;
+
+			if (this.subtotal() > 0) {
+				items = this.items();
+
+				for (i = 0, len = items.length; i < len; i++) {}
+			}
+		});
+	</script>
+	<!-- //cart-js -->
+	<script>
+		jQuery(document).ready(function () {
+			jQuery(".button-log a").click(function () {
+				jQuery(".overlay-login").fadeToggle(200);
+				jQuery(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		jQuery('.overlay-close1').on('click', function () {
+			jQuery(".overlay-login").fadeToggle(200);
+			jQuery(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+	</script>
+	<!-- carousel -->
+	<!-- Count-down -->
+	<script src="js/simplyCountdown.js"></script>
+	<link href="css/simplyCountdown.css" rel='stylesheet' type='text/css' />
+	<script>
+		var d = new Date();
+		simplyCountdown('simply-countdown-custom', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 2,
+			day: 25
+		});
+	</script>
+	<!--// Count-down -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 2,
+						nav: false
+					},
+					900: {
+						items: 3,
+						nav: false
+					},
+					1000: {
+						items: 4,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+
+	<!-- //end-smooth-scrolling -->
 
 
-        <!-- ##### Footer Area End ##### -->
+	<!-- dropdown nav -->
+	<script>
+		jQuery(document).ready(function () {
+			jQuery(".dropdown").hover(
+				function () {
+					jQuery('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					jQuery(this).toggleClass('open');
+				},
+				function () {
+					jQuery('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					jQuery(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- //dropdown nav -->
+  <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function(jQuery) {
+            jQuery(".scroll").click(function(event) {
+                event.preventDefault();
+                jQuery('html,body').animate({
+                    scrollTop: jQuery(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear'
+            						 };
+            						*/
 
-  <!-- jQuery (Necessary for All JavaScript Plugins) -->
-  <script src="js/jquery/jquery-2.2.4.min.js"></script>
-  <!-- Popper js -->
-  <script src="js/popper.min.js"></script>
-  <!-- Bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Plugins js -->
-  <script src="js/plugins.js"></script>
-  <!-- Classy Nav js -->
-  <script src="js/classy-nav.min.js"></script>
-  <!-- Active js -->
-  <script src="js/active.js"></script>
+            jQuery().UItoTop({
+                easingType: 'easeOutQuart'
+            });
 
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+	<script src="js/bootstrap.js"></script>
+	<!-- js file -->
 </body>
 </html>

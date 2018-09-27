@@ -12,7 +12,7 @@ import { UserService } from '../_services/index';
 export class VermattiHeaderComponent implements OnInit {
 
 
-  constructor(private router: Router,) {
+  constructor(private router: Router) {
 
   }
 
