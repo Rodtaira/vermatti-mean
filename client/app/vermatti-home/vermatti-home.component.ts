@@ -6,6 +6,7 @@ import {VermattiHeaderComponent} from '../vermatti-header/index';
 import {VermattiFooterComponent} from '../vermatti-footer/index';
 import {VermattiCartComponent} from '../vermatti-cart/index';
 import {VermattiBannerComponent} from '../vermatti-banner/index';
+import {VermattiProductsComponent} from '../vermatti-products/index';
 
 @Component({
   moduleId: module.id,

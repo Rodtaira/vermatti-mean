@@ -16,7 +16,8 @@ import {VermattiHomeComponent} from './vermatti-home/index';
 import {VermattiCartComponent} from './vermatti-cart/index';
 import {VermattiFooterComponent} from './vermatti-footer/index';
 import {VermattiHeaderComponent} from './vermatti-header/index';
-import {VermattiBannerComponent} from './vermatti-banner/index'; 
+import {VermattiBannerComponent} from './vermatti-banner/index';
+import {VermattiProductsComponent} from './vermatti-products/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 
@@ -39,7 +40,8 @@ import { RegisterComponent } from './register/index';
         VermattiHeaderComponent,
         VermattiFooterComponent,
         VermattiCartComponent,
-        VermattiBannerComponent
+        VermattiBannerComponent,
+        VermattiProductsComponent
     ],
     providers: [
         AuthGuard,
