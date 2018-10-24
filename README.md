@@ -1,28 +1,25 @@
 # Vermatti MEAN Ecommerce
-Ecommerce developed using MEAN 
+Ecommerce developed using MEAN
 
-To run this project you need to have installed at last the last versions of node, npm and mongo. 
+To run this project you need to have installed at least the lastest versions of node, npm and mongo. 
 
-Follow these steps, 
+Follow these steps,
 
 git clone https://github.com/Rodtaira/vermatti-mean.git
 
-Enter the directory of the project with: 
+Enter the directory of the project with:
 
-cd vermatti-mean/ 
+cd vermatti-mean/
 
-Run the client side with: 
+Run the client side with:
 
 cd client/
 
-npm start 
+npm start
 
-Run the server side with: 
+Run the server side with:
 
-cd server/ 
-node serve 
+cd server/
+node serve
 
 Ps: Make sure to be running the mongo database with mongod
-
-
-
